@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tcc.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Centraliza os itens entre si */
+            padding: 10px 50px;
+           
+        }
+
+        .header-icon {
+            width: 150px;
+        }
+
+        .search-box {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #1f6e11;
+            border-radius: 4px;
+            width: 300px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image-button img {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .slideshow-container {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            user-select: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .product-item {
+            width: 280px;
+            background-color: #fff;
+            border: 1px solid #ff0800;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 151, 123, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 12px rgba(54, 255, 28, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-item p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .product-item h6 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-item h6.s {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .buy {
+            background-color: #ecb7ff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy:hover {
+            background-color: #d49fdd;
+        }
+
+        .stars {
+            margin-bottom: 10px;
+        }
+
+        .stars i {
+            color: #f4c542;
+        }
+
+        @media (max-width: 1000px) {
+            .product-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .product-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="header">
+            <img src="Starpng.png" alt="Logo" class="header-icon">
+            <div class="search-container">
+                <form action="https://www.example.com/search" method="get">
+                    <input type="text" name="query" class="search-box" placeholder="Digite sua pesquisa...">
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+            </div>
+            <div class="button-container">
+                <a href="ii.html"><img src="sac.png" alt="Sac Icon"></a>
+                <a href="cadastro.html"><img src="usuario.png" alt="User Icon"></a>
+            </div>
+        </div>
+    </center>
+
+    <div class="slideshow-container">
+        <div class="mySlides"><img src="prom2.webp" alt="Promoção 1"></div>
+        <div class="mySlides"><img src="prom4.webp" alt="Promoção 2"></div>
+        <div class="mySlides"><img src="prom7.webp" alt="Promoção 3"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="prod1.webp" alt="Wepink">
+            <h3>Wepink</h3>
+            <p>Body Splash Cookies Desodorante Colônia 200ml</p>
+            <h6 class="s">R$ 50,00</h6>
+            <h6>R$ 30,00</h6>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+
+        <div class="product-item">
+            <img src="prod3.jpg" alt="Avon">
+            <h3>Avon</h3>
+            <p>Avon Kit Attraction Sensation Her</p>
+            <h6 class="s">R$ 115,00</h6>
+            <h6>R$ 130,00</h6>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+
+
+
+        <div class="product-item">
+            <img src="prod4.webp" alt="Natura">
+            <h3>Natura</h3>
+            <p>Kit Natura Tododia Cereja E Avelã Loção 400ml</p>
+            <h6 class="s">R$ 170,00</h6>
+            <h6>R$ 140,00</h6>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+        <div class="product-item">
+            <img src="prod5.jpg" alt="MariKay">
+            <h3>MariKay</h3>
+            <p>Love Fearlessly Deo Parfum</p>
+            <h6 class="s">R$ 180,00</h6>
+            <h6>R$ 150,00</h6>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+        <div class="product-item">
+            <img src="prod6.webp" alt="Eudora">
+            <h3>Eudora</h3>
+            <p>Kit Eudora Siàge Nutri Rosé (4 Produtos)</p>
+            <h6 class="s">R$ 220,00</h6>
+            <h6>R$ 200,00</h6>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length);
+        }
+            </script>
+            </body>

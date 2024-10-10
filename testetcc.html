@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tcc.css">
+    <title>Document</title>
+    <style>
+        
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+ background-color: rgb(255, 255, 255);
+    
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 340px; /* Espaço entre os itens */
+    padding: 10px; /* Espaçamento ao redor do conteúdo */
+   
+   
+}
+
+.header-icon {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    
+}
+
+
+
+.search-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ecb7ff; 
+    border-radius: 4px;
+    width: 500px; /* Ajuste o tamanho conforme necessário */
+    
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ecb7ff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Espaço entre o campo de pesquisa e o botão de busca */
+    width: 100px;
+    
+}
+
+.search-button:hover {
+    background-color: #000000;
+}
+
+.button-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 60px; /* Espaço entre os botões */
+   
+    
+   
+}
+
+.image-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+
+.image-buton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+ 
+
+}
+
+.image-button img {
+    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.image-button:hover img {
+    opacity: 0.8; /* Efeito visual ao passar o mouse */
+}
+
+
+.image-buton img {
+  width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+
+.image-buton:hover img {
+  opacity: 0.8; /* Efeito visual ao passar o mouse */
+}
+.ahref{
+    border-radius: 50px;
+}
+
+
+
+.letra{
+    color: black;
+    text-decoration: none;
+}
+
+
+nav a{
+float: left;
+display: block;
+color: rgb(253, 253, 253);
+text-align: center;
+padding: 14px 10px;
+text-transform: none;
+margin-left: 60px;
+}
+
+.imgprom{
+    width: 1899px;
+   height: 280px;
+}
+
+
+.imgprom1{
+  width: 1650px;
+  margin-left: 100px;
+  height: auto;
+  border: solid  rgb(217, 161, 255);
+  border-radius: 7px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.slideshow-container {
+  position: relative;
+  width:  1899px;
+  height: auto;
+  overflow: hidden;
+ 
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+ 
+  
+}
+
+.mySlides img {
+ 
+  vertical-align: middle;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: 600px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.prod1{
+    background-color: #ffffff;
+    border-radius: 5px;
+  border: solid #ecb7ff; 
+  width: 330px;
+  margin-left: 100px;
+}
+
+
+.linha2{
+    height: 225px;
+    
+}
+
+
+
+
+.aprod{
+  text-decoration: none;
+  color: #000000;
+
+}
+
+
+
+h3{
+  text-align: center;
+  margin: 0;
+  padding: top 10px; 
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+.content1 {
+  flex: 1 1 calc(25% - 20px); /* Cada conteúdo ocupará 25% do espaço disponível menos o espaço definido no gap */
+  text-align: center;
+  margin-left: 100px;
+  border: solid   #ebc0fb; 
+  border-radius: 20px;
+  margin: 15px;
+  box-sizing:border-box;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px  0 10px 10px ;
+transition: .4s;
+background: rgb(255, 255, 255);
+}
+
+.gla {
+  display: flex;
+  justify-content: center; /* Centraliza os contêineres horizontalmente */
+  gap: 50px; /* Espaço entre os elementos */
+  padding: 80px; /* Adiciona um pouco de espaçamento interno */
+ position: center;
+
+}
+
+
+
+
+.content:hover{
+box-shadow: 0 3px 6px 
+0 3px 6px ;
+transform: translate(0px, -8px);
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+p{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-top: 0 8px;
+}
+
+h6{
+  font-size: 23px;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  
+}
+
+li{
+  padding-top: 5px;
+ 
+}
+
+
+.fa{
+  font-size: 26px;
+  transition:.4s ;
+ margin: 3px;
+}
+
+.checked{
+  color: rgb(80, 23, 133);
+}
+
+.fa:hover{
+  transform: scale(1.3);
+  transition: .6s;
+}
+
+button{
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px ;
+  outline:none;
+  cursor: pointer; 
+  margin-top: 5px;
+  
+}
+
+.buy{
+  background: #ecb7ff; 
+  color: #000000;
+  border:#ecb7ff;  
+ 
+}
+
+@media(max-width:1000px){
+  .content1{
+      width: 45%;
+  }
+}
+
+@media(max-width:750px){
+  .content1{
+      width: 100%;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    
+<center>
+    <div class="header">
+        <img src="Starpng.png" alt="Estrela" class="header-icon">
+        
+        <div class="search-container">
+            <form action="https://www.example.com/search" method="get">
+
+
+                <input type="text" name="query" class="search-box" placeholder="Digite sua pesquisa...">
+
+
+                <button type="submit" class="search-button">Buscar</button>
+
+
+            </form>
+        </div>
+    
+
+
+
+
+        
+        <div class="button-container">
+
+
+            <a href="ii.html">
+            <button class="image-button" onclick="">
+                <img src="sac.png" alt="Ícone de Sac">
+            </button></a>
+
+<a href="cadastro.html">
+            <button class="image-buton" onclick="">
+                <img src="usuario.png" alt="Ícone de Usuário">
+            </button>
+        </a>
+
+
+
+        </div>
+    </div>
+</center>
+
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img class="imgprom" src="prom2.webp" alt="">
+            
+        </div>
+
+        <div class="mySlides">
+            <img class="imgprom" src="prom4.webp" alt="">
+            
+        </div>
+
+
+
+        <div class="mySlides">
+            <img class="imgprom" src="prom7.webp" alt="">
+            
+        </div>
+
+
+
+
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <br>
+    
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+    
+
+<div class="gla">
+
+
+
+
+
+    <div class="content1">
+        <img src="prod1.webp" alt="">
+        <P><h3>Wepink</h3></P>
+        <br>
+        <p> Body Splash Cookies Desodorante Colônia 200ml
+
+           </p>
+           <p>  O Desodorante Colônia Body Splash Cookies </p>
+           <p> e brinde a uma personalidade</p>
+           <br>
+           
+           <h6><s>R$ 50,00</s></h6>
+        <h6>R$ 30,00</h6>
+        <ul>
+            <li>⭐⭐⭐⭐⭐</li>
+        <li><i class="fa fa-star checked"></i></li>
+        <li><i class="fa fa-star checked"></i></li>
+        <li><i class="fa fa-star checked"></i></li>
+        <li><i class="fa fa-star checked"></i></li>
+        <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy">Compre Agora</button>
+            </div>
+
+
+
+
+
+
+            <div class="content1">
+                <img src="prod3.jpg" alt="">
+                <P><h3>Avon</h3></P>
+                <br>
+                <p> Avon Kit Attraction Sensation Her
+                   </p>
+                   <p> O Attraction Sensation traz uma mistura envolvente </p>
+                   <p> de ameixa, jasmim branca floral e couro</p>
+                   <br>
+                   
+                   <h6><s>R$ 115,00</s></h6>
+                <h6>R$ 130,00</h6>
+                <ul>
+                    <li>⭐⭐⭐⭐⭐</li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy">Compre Agora</button>
+                    </div>
+
+
+
+
+
+                    <div class="content1">
+                        <img src="prod4.webp" alt="">
+                        <P><h3>Natura</h3></P>
+        <br>
+        <p>Kit Natura Tododia Cereja E Avelã Loção 400 Ml
+           </p>
+           <p> Com fragrância inspirada na combinação </p>
+           <p> Cerejas com a cremosidade das nozes de avelã.</p>
+           <br>
+           
+           <h6><s>R$ 170,00</s></h6>
+                        <h6>R$ 140,00</h6>
+                        <ul><li>⭐⭐⭐⭐⭐</li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                        </ul>
+                        <button class="buy">Compre Agora</button>
+                            </div>
+
+
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+        <img class="imgprom1" src="prom8.webp" alt="">
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="gla">
+
+        <div class="content1">
+<img src="prod5.jpg" alt="">
+<P><h3>MariKay</h3></P>
+<br>
+<p>Love Fearlessly Deo Parfum
+   </p>
+   <p> Uma fragrância Floral Gourmand com notas intensas e</p>
+   <p> calorosas inspirada na celebração pelo amor à vida.</p>
+   <br>
+   <br>
+   <h6><s>R$ 180,00</s></h6>
+   <h6>R$ 150,00</h6>
+<ul><li>⭐⭐⭐⭐⭐</li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star "></i></li>
+</ul>
+<button class="buy">Compre Agora</button>
+        </div>
+
+        <div class="content1">
+            <img src="prod6.webp" alt="">
+            <P><h3>Eudora</h3></P>
+            <br>
+            <p>Kit Eudora Siàge Nutri Rosé (4 Produtos)
+    
+               </p>
+               <p> Kit de tratamento para cabelos danificados.</p>
+               <p>Eudora Siàge Nutri Rosé proporciona fios saudáveis e livres de pontas duplas diariamente.</p>
+               <br>
+                       <h6><s>R$ 220,00</s></h6>
+            <h6>R$ 200,00</h6>
+            <ul><li>⭐⭐⭐⭐⭐</li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star "></i></li>
+            </ul>
+            <button class="buy">Compre Agora</button>
+                </div>
+
+
+
+
+                        <div class="content1">
+                            <img src="prod9.webp" alt="">
+                            <P><h3>Bruna Tavares</h3></P>
+        <br>
+        <p>Base de maquiagem líquida Bruna Tavares BT Skin Base Liquida tom f50 
+           </p>
+           <p> Proporciona acabamento semifosco.</p>
+           <p>Fornece uma cobertura leve/média.</p>
+           <br>
+                                       <h6><s>R$ 70,00</s></h6>
+                            <h6>R$ 59,90</h6>
+                            <ul><li>⭐⭐⭐⭐⭐</li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star "></i></li>
+                            </ul>
+                            <button class="buy">Compre Agora</button>
+                                </div>
+
+
+    </div>
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img class="imgprom1" src="prom9.webp" alt="">
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="gla">
+
+
+
+        <div class="content1">
+            <img src="prod12.webp" alt="">
+            <P><h3>Gucci</h3></P>
+            <br>
+            <p>CAROLINA HERRERA GOOD GIRL BLUSH EAU DE PARFUM
+               </p>
+               <p>Good Girl Blush de Carolina Herrera é</p>
+               <p>um perfume Chipre Floral Feminino.</p>
+               <p></p>
+               <br>
+               <br>
+                       <h6><s>R$ 1230,90</s></h6>
+            <h6>R$ 758,00</h6>
+            <ul><li>⭐⭐⭐⭐⭐</li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star "></i></li>
+            </ul>
+            <button class="buy">Compre Agora</button>
+                </div>
+
+
+                <div class="content1">
+                    <img src="prod13.jpeg" alt="">
+                    <P><h3>Gucci</h3></P>
+            <br>
+            <p>Gucci Guilty Diamond Eau De Toilette Spray
+               </p>
+               <p>Uma fragrância floral oriental para mulheres modernas</p>
+               <p> Picante, brilhante, suave, sensual e sedutora</p>
+              <br>
+               <br>
+                               <h6><s>R$ 2983,78</s></h6>
+                    <h6>R$ 890,87</h6>
+                    <ul><li>⭐⭐⭐⭐⭐</li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    </ul>
+                    <button class="buy">Compre Agora</button>
+                        </div>
+
+
+                        <div class="content1">
+                            <img src="prod14.jpeg" alt="">
+                            <P><h3>Natura</h3></P>
+                            <br>
+                            <p>Luna 75 ml
+                               </p>
+                               <p>O Luna Natura é uma interpretação brasileira de personalidade</p>
+                               <p>caminho olfativo que é um clássico mundial.</p>
+                               <br>
+                               <br>
+                                       <h6><s>R$ 170,90</s></h6>
+                            <h6>R$ 348,90</h6>
+                            <ul><li>⭐⭐⭐⭐⭐</li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star "></i></li>
+                            </ul>
+                            <button class="buy">Compre Agora</button>
+                                </div>
+
+
+    </div>
+
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    
+
+
+
+</body>
+</html>

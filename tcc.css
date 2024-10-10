@@ -1,0 +1,315 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(255, 255, 255);
+    
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 340px; /* Espaço entre os itens */
+    padding: 10px; /* Espaçamento ao redor do conteúdo */
+   
+   
+}
+
+.header-icon {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    
+}
+
+
+
+.search-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ecb7ff; 
+    border-radius: 4px;
+    width: 500px; /* Ajuste o tamanho conforme necessário */
+    
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ecb7ff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Espaço entre o campo de pesquisa e o botão de busca */
+    width: 100px;
+    
+}
+
+.search-button:hover {
+    background-color: #000000;
+}
+
+.button-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 60px; /* Espaço entre os botões */
+   
+    
+   
+}
+
+.image-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+
+.image-buton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+ 
+
+}
+
+.image-button img {
+    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.image-button:hover img {
+    opacity: 0.8; /* Efeito visual ao passar o mouse */
+}
+
+
+.image-buton img {
+  width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+
+.image-buton:hover img {
+  opacity: 0.8; /* Efeito visual ao passar o mouse */
+}
+.ahref{
+    border-radius: 50px;
+}
+
+
+
+.letra{
+    color: black;
+    text-decoration: none;
+}
+
+
+nav a{
+float: left;
+display: block;
+color: rgb(253, 253, 253);
+text-align: center;
+padding: 14px 10px;
+text-transform: none;
+margin-left: 60px;
+}
+
+.imgprom{
+    width: 1899px;
+   height: 280px;
+}
+
+
+.imgprom1{
+  width: 1650px;
+  margin-left: 100px;
+  height: auto;
+  border: solid  rgb(217, 161, 255);
+  border-radius: 7px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.slideshow-container {
+  position: relative;
+  width:  1899px;
+  height: auto;
+  overflow: hidden;
+ 
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+ 
+  
+}
+
+.mySlides img {
+ 
+  vertical-align: middle;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: 600px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.prod1{
+    background-color: #ffffff;
+    border-radius: 5px;
+  border: solid #ecb7ff; 
+  width: 330px;
+  margin-left: 100px;
+}
+
+
+.linha2{
+    height: 225px;
+    
+}
+
+
+
+
+.aprod{
+  text-decoration: none;
+  color: #000000;
+
+}
+
+
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.product-item {
+  
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #ecb7ff; 
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(255, 251, 251, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 50px;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.product-item h6 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-item h6.s {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.buy {
+  background-color: #ecb7ff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  height: 40px;
+
+}
+
+.buy:hover {
+  background-color: #d49fdd;
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.stars i {
+  color: #f4c542;
+}
+
+@media (max-width: 1000px) {
+  .product-item {
+      width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .product-item {
+      width: 100%;
+  }
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tcc.css">
+    <title>Document</title>
+</head>
+<body>
+   
+<center>
+    <div class="header">
+        <img src="Starpng.png" alt="Estrela" class="header-icon">
+        
+        <div class="search-container">
+            <form action="https://www.example.com/search" method="get">
+
+
+                <input type="text" name="query" class="search-box" placeholder="Digite sua pesquisa...">
+
+
+                <button type="submit" class="search-button">Buscar</button>
+
+
+            </form>
+        </div>
+    
+
+
+
+
+        
+        <div class="button-container">
+
+
+            <a href="ii.html">
+            <button class="image-button" onclick="">
+                <img src="sac.png" alt="Ícone de Sac">
+            </button></a>
+
+<a href="cadastro.html">
+            <button class="image-buton" onclick="">
+                <img src="usuario.png" alt="Ícone de Usuário">
+            </button>
+        </a>
+
+
+
+        </div>
+    </div>
+</center>
+
+<br>
+<br>
+
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img class="imgprom" src="prom2.webp" alt="">
+            
+        </div>
+
+        <div class="mySlides">
+            <img class="imgprom" src="prom4.webp" alt="">
+            
+        </div>
+
+
+
+        <div class="mySlides">
+            <img class="imgprom" src="prom7.webp" alt="">
+            
+        </div>
+
+
+
+
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <br>
+    
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+    
+
+<div class="product-grid">
+
+
+
+
+
+    <div class="product-item">
+        <img src="prod12.webp" alt="">
+        <P><h3>Gucci</h3></P>
+        <br>
+        <p>CAROLINA HERRERA GOOD GIRL
+           </p>
+          
+           <h6 class="s">R$ 890,00</h6>
+        <h6>R$ 758,00</h6> <br>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <button class="buy">Compre Agora</button>
+            </div>
+
+
+            <div class="product-item">
+                <img src="prod13.jpeg" alt="">
+                <P><h3>Gucci</h3></P>
+        <br>
+        <p>Gucci Guilty Diamond Eau De Toilette
+           </p>
+           
+         
+           <h6 class="s">R$ 1000,00</h6>
+                <h6>R$ 890,87</h6> <br>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <button class="buy">Compre Agora</button>
+                    </div>
+
+
+                    <div class="product-item">
+                        <img src="prod17.jpg" alt="">
+                        <P><h3>Natura</h3></P>
+                        <br>
+                        <p>Luna 75 ml
+                           </p>
+                           
+                         
+                                    <h6 class="s">R$ 450,00</h6>
+                        <h6>R$ 348,90</h6>
+                        <br>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <button class="buy">Compre Agora</button>
+                            </div>
+
+
+
+
+                            <div class="product-item">
+                                <img src="prod15.jpg" alt="">
+                            <h3>Haskell</h3>
+                            <br>
+                            <p> Máscara líquida Lamelar 
+                               
+                                <h6 class="s">R$ 79,00</h6>
+                            <h6>R$ 60,00</h6>
+                            <br>
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <button class="buy">Compre Agora</button>
+                                </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+        <img class="imgprom1" src="prom8.webp" alt="">
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="product-grid">
+
+        <div class="product-item">
+<img src="prod5.jpg" alt="">
+<h3>MariKay</h3>
+<br>
+<p>Love Fearlessly Deo Parfum
+   </p>
+   
+   
+   <h6 class="s">R$ 150,00</h6>
+   <h6>R$ 180,00</h6> <br>
+   <div class="stars">⭐⭐⭐⭐⭐</div>
+<button class="buy">Compre Agora</button>
+        </div>
+
+
+
+        <div class="product-item">
+            <img src="prod6.webp" alt="">
+            <h3>Eudora</h3>
+            <br>
+            <p>Kit Eudora Siàge Nutri Rosé
+    
+               </p>
+               
+               <h6 class="s">R$ 220,00</h6>
+            <h6>R$ 200,00</h6> <br>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+                </div>
+
+
+
+
+
+                <div class="product-item">
+                    <img src="prod8.webp" alt="">
+                <h3>Mari Maria</h3>
+                <br>
+                <p> Fire kiss gloss labial bubble gum
+                   
+                    <h6 class="s">R$ 34,00</h6>
+                <h6>R$ 25,80</h6>
+                <br>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                <button class="buy">Compre Agora</button>
+                    </div>
+
+
+
+
+                <div class="product-item">
+                            <img src="prod9.webp" alt="">
+                            <h3>Bruna Tavares</h3>
+        <br>
+        <p>BT Skin Base Liquida tom f50 
+           </p>
+        
+           
+           <h6 class="s">R$ 70,00</h6>
+                            <h6>R$ 59,90</h6> <br>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <button class="buy">Compre Agora</button>
+                                </div>
+
+
+    </div>
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img class="imgprom1" src="prom9.webp" alt="">
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="product-grid">
+
+
+
+       
+    
+<div class="product-item">
+    <img src="prod1.webp" alt="">
+<h3>Wepink</h3>
+<br>
+<p> Body Splash Cookies Desodorante
+   
+    <h6 class="s">R$ 50,00</h6>
+<h6>R$ 30,00</h6>
+<br>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+<button class="buy">Compre Agora</button>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="product-item">
+        <img src="prod3.jpg" alt="">
+<h3>Avon</h3>
+        <br>
+        <p> Avon Kit Attraction Sensation Her
+           </p>
+           
+           
+           <h6 class="s">R$ 115,00</h6>
+        <h6>R$ 130,00</h6>
+        <br>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        <button class="buy">Compre Agora</button>
+            </div>
+
+
+
+
+            <div class="product-item">
+                <img src="prod2.webp" alt="">
+            <h3>Zaad</h3>
+            <br>
+            <p> Body Splash Cookies Desodorante
+               
+                <h6 class="s">R$ 50,00</h6>
+            <h6>R$ 30,00</h6>
+            <br>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button class="buy">Compre Agora</button>
+                </div>
+
+
+
+
+
+            <div class="product-item">
+                <img src="prod16.webp" alt="">
+                <h3>Natura</h3>
+<br>
+<p>Presente Natura Kaiak Urbe
+   </p>
+   
+   
+   <h6 class="s">R$ 50,00</h6>
+                <h6>R$ 45,00</h6> <br>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <button class="buy">Compre Agora</button>
+                    </div>
+
+    </div>
+
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    
+
+
+
+</body>
+</html>
